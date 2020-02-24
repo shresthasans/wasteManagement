@@ -1,0 +1,63 @@
+// Footer
+//
+// Global Markup for Sticky Footer
+//
+// markup:
+//	<footer class="footer text-center">
+// 		<div class="container">
+//  			<p class="text-muted">Sticky footer</p>
+//  		</div>
+//  	</footer>
+//
+// Styleguide 3.2
+//
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 73px;
+    height: 100%;
+}
+
+.footer {
+    background: #000;
+    position: absolute;
+    height: 73px;
+    bottom: 0;
+    width: 100%;
+    h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    p {
+        font-size: 17px;
+        color: #b3b3b3;
+    }
+}
+
+.snj-twitter:before {
+    content: "\e908";
+}
+
+.socialize li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socialize a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.socialize a:hover {
+    color: rgba(255, 255, 255, 0.3);
+}

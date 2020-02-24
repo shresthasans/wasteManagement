@@ -1,0 +1,67 @@
+// Typography
+//
+// Global Markup for Header
+//
+// markup:
+//	<div class="btn btn-square">
+//		normal
+//	</div>
+//	<div class="btn btn-square btn--primary">
+//		#000000	
+//	</div>
+//	<div class="btn btn-square btn--secondary">
+//		#FF0000	
+//	</div>
+//
+// Styleguide 1.3
+//
+// Color
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    &-title {
+        font-size: 5rem;
+    }
+}
+
+.title {
+    font-size: 3rem;
+    color: $primary-clr;
+    &--border {
+        &:after {
+            content: '';
+            border-bottom: 2px solid $primary-clr;
+            width: 80px;
+            display: block;
+            margin: 2rem auto;
+        }
+    }
+    &--lg {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+}
+
+.text {
+    &-base {
+        font-size: $base-size__xs;
+    }
+    &-md {
+        font-size: $base-size * 2;
+    }
+    &-gray {
+        color: $gray-light;
+    }
+    &-black {
+        color: $primary-clr;
+    }
+}
+
+.leading {
+    &-normal {
+        line-height: 1.2;
+    }
+}

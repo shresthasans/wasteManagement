@@ -1,0 +1,13 @@
+.number-counter {
+    font-size: 4rem;
+    font-weight: 400;
+    color: $primary-clr;
+    &:after {
+        content: '+';
+        margin-left: 10px;
+    }
+    &__label {
+        letter-spacing: 3px;
+        ;
+    }
+}

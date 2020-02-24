@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Outlook Addin - Case Study | Sanjay Shrestha || UX Architect, UX Designer, Fullstack Designer, UI Designer, UI Developer, UX/UI Designer, Web Designer, UX UI Designer, Digital Designer, Freelancer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="../../../css/styles.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <header id="page-header">
+        <a href="../../../index.html" class="snj-logo absolute text-black no-underline text-uppercase">
+            <!-- <i class="snj-icon logo"></i> -->
+            shresthasans
+        </a>
+        <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../portfolio.html">Portfolio</a></li>
+                    <li><a href="../../../services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="snj-hero snj-hero--inner">
+        <div class="snj-hero__cnt">
+            <h2 class="snj-hero__cnt__subTitle animate">Case Study</h2>
+            <h1 class="snj-hero__cnt__title animate">Outlook Add-in - Feedback app</h1>
+        </div>
+    </section>
+    <main class="page-content">
+        <section class="snj-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row animate">
+                                    <div class="col-md-4">
+                                        <h2 class="text-md leading-normal">
+                                            Project Overview
+                                        </h2>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="text-base">
+                                            This project was assigned to me as a Hands-on Assignment while I was interviewing with a company for a UX Designer role. The requirement was to <b>two different flows</b> for a Feedback collection app, as an
+                                            <em>outlook add-in</em> and a <em>SPA (Single page appliaiton)</em>. Both of these applicaiton have have different requirements. <br/><br/> I was asked to complete the design assignment within 2-4 days and consolidate
+                                            all the design activities & deliverables within a single PDF file and try to articulate the entire design process being followed along with assumptions made, if any. The company were expecting the key design
+                                            activities including my UX analysis, task flows, conceptual sketches, detailed wireframes and visual mockups (optional).
+
+                                        </p>
+                                        <div class="snj-shadowBox p-4">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4>My role</h4>
+                                                    <p>UX/UI Designer</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4>Methods and Tools</h4>
+                                                    <p>Competitive Analysis, IA, Visual Design, Adobe XD</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <h4>Practices</h4>
+                                                    <p class="mb-0">Design System, Product Thinking, Interaction design, Visual Design, User research, UX & UI Design, Prototyping</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="tabs mt-16">
+                                            <div class="tab-button-outer">
+                                                <ul id="tab-button">
+                                                    <li class="text-base"><a href="#tab01">Feedback widget</a></li>
+                                                    <li class="text-base"><a href="#tab02">Feedback responsive web app</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-select-outer">
+                                                <select id="tab-select" class="select-css">
+                                                <option value="#tab01">Widget or Pluggable component</option>
+                                                <option value="#tab02">Responsive web app</option>
+                                              </select>
+                                            </div>
+
+                                            <div id="tab01" class="tab-contents">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h2 class="text-md leading-normal">
+                                                            Project Context
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-8 text-base">
+                                                        <p>
+                                                            Designing a responsive widget or pluggable component to provide quick feedback. This widget needs to have a fluid minimalistic design, so that it can be configured as “plug-in” for any existing office web app like Outlook, Word, Excel or PPT. The design
+                                                            needs to be scalable, intuitive as well as efficient to enable users to provide quick feedback within short span of time i.e. minimum number of clicks.<br><br>The
+                                                            following are key business requirements:
+                                                        </p>
+                                                        <ul>
+                                                            <li>The feedback needs to be provided in 2 steps – ?providing the rating and then specifying the feedback category or categories where the selected rating will apply. </li>
+                                                            <li>The rating will have 5 options to choose from and it could be anything like excellent, very good, good, fair, poor, etc. Or, it could be some other related content.</li>
+                                                            <li>The feedback category will have 10 options to choose from and user can choose multiple options.
+                                                            </li>
+                                                            <li>The feedback category names could be the list of competencies like meticulous, confidence, diligence, attention to details, discipline, communication skills, etc. Or, it could be some other related
+                                                                content.
+                                                            </li>
+                                                            <li>The widget should apply the same rating to all the selected categories.</li>
+                                                            <li>The widget should allow user to capture the free text comments as part of the overall feedback submission.</li>
+                                                            <li>The widget should automatically recognize & show the user for whom the feedback is to be provided based upon the user-context from office apps. It would be an email sender in case of Outlook
+                                                                and the document owner in case of Word, Excel or PPT apps.</li>
+                                                            <li>The widget should let user submit or cancel the feedback.</li>
+                                                            <li>The widget should acknowledge the user on successful submission of the feedback.</li>
+                                                            <li>The widget should allow the user to submit the feedback over and again for same or another employee.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-16">
+                                                    <div class="col-md-4">
+                                                        <h2 class="text-md leading-normal">
+                                                            Process
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-8 text-base">
+                                                        <p>
+                                                            <strong>Discover, Define, Design and Deliver</strong><br/> I followed HCD process by first conducting user research. After synthesizing inspiring insights from survey and interviews, I defined
+                                                            the problem and jumped right into the ideation phase. From sketches all the way into fidelity prototypes, I gradually created the first version of the application. I also conducted in-house usability
+                                                            testings and iterated more based on the feedback I received.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-16">
+                                                    <div class="col-md-4">
+                                                        <h2 class="text-md leading-normal">
+                                                            Ideation
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-8 text-base">
+                                                        <p>
+                                                            <strong>Understanding the Product</strong><br/> I conducted the competetive analysis to study how other products takle the similar problems. I picked 6 competive products to compare the overall
+                                                            UI and flows and 5 well established design system to learn how to effectively deliver the product.
+                                                        </p>
+                                                        <div class="mb-8">
+                                                            <div class="text-left bg-gray p-4 snj-shadowBox">
+                                                                <h4 class="mb-4">Information Architecture</h4>
+                                                                <img src="../../../images/projects/outlook/ia/widget/ia-feedback-app-widget.jpg" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-8">
+                                                            <div class="text-left bg-gray p-4 snj-shadowBox">
+                                                                <h4 class="mb-4">Paper sketches</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/widget/01_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/widget/02_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-8">
+                                                            <div class="text-left bg-gray p-4 snj-shadowBox">
+                                                                <h4 class="mb-4">Wireframe</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/widget/01_preselcted_user.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/widget/02_select_category_ option.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/widget/03_enter_feedback.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/widget/04_cancel_button.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/widget/05_success_message.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-8">
+
+                                                            <div class="bg-gray p-4 snj-shadowBox text-left">
+                                                                <h4 class="mb-4">Visual Design</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/widget/01_preselcted_user.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/widget/02_select_category_option.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/widget/03_enter_feedback.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/widget/04_cancel_button.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/widget/05_success_message.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab02" class="tab-contents">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h2 class="text-md leading-normal">
+                                                            Project Context
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-8 text-base">
+                                                        <p>
+                                                            Design a responsive web page to provide a detailed feedback for a specific employee. This web page design will be for a separate single page application (SPA) and is not directly related to pluggable feedback widget designed above. The design needs to
+                                                            be responsive, scalable, as well as intuitive to enable users to provide detailed feedback for a specific employee. The design should support multiple from factors and should provide optimal
+                                                            experience for desktop, tablet & mobile layouts.
+                                                            <br/><br/> The following are key business requirements:
+
+                                                        </p>
+                                                        <ul>
+                                                            <li>The feedback needs to be provided in 2 steps – ?selecting the employee and then providing a specific rating against one or more feedback categories.</li>
+                                                            <li>The page should allow the user to lookup & select a specific employee, and provide a separate feedback rating against one or more feedback categories, unlike in the case of widget.</li>
+                                                            <li>The rating can have the same 5 options to choose from that were used for the feedback widget above.</li>
+                                                            <li>The feedback category can have the same 10 options to choose from that were used for widget above.</li>
+                                                            <li>The user should be able to view the additional details for a specific feedback category like description of the category, rating guidelines for providing feedback, etc.</li>
+                                                            <li>The page should allow the user to capture separate rating as well as comments for each feedback category.</li>
+                                                            <li>The page should allow user to capture additional comments as part of the overall feedback submission.</li>
+                                                            <li>The page should let user submit or cancel the feedback.</li>
+                                                            <li>The page should acknowledge the user on successful submission of the feedback.</li>
+                                                            <li>The page should not allow the user to resubmit the feedback for the same employee but should allow the user to modify or change the feedback after submission.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-16">
+                                                    <div class="col-md-4">
+                                                        <h2 class="text-md leading-normal">
+                                                            Process
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-8 text-base">
+                                                        <p>
+                                                            <strong>Discover, Define, Design and Deliver</strong><br/> I followed HCD process by first conducting user research. After synthesizing inspiring insights from survey and interviews, I defined
+                                                            the problem and jumped right into the ideation phase. From sketches all the way into fidelity prototypes, I gradually created the first version of the application. I also conducted in-house usability
+                                                            testings and iterated more based on the feedback I received.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-16">
+                                                    <div class="col-md-4">
+                                                        <h2 class="text-md leading-normal">
+                                                            Ideation
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-8 text-base">
+                                                        <p>
+                                                            <strong>Understanding the Product</strong><br/> I conducted the competetive analysis to study how other products takle the similar problems. I picked 6 competive products to compare the overall
+                                                            UI and flows and 5 well established design system to learn how to effectively deliver the product.
+                                                        </p>
+                                                        <div class="mb-8">
+                                                            <div class="text-left bg-gray p-4 snj-shadowBox">
+                                                                <h4 class="mb-4">Information Architecture</h4>
+                                                                <img src="../../../images/projects/outlook/ia/web-app/ia-feedback-web-app.jpg" class="img-fluid">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="mb-8">
+                                                            <p><strong></strong></p>
+                                                            <div class="text-left bg-gray p-4 snj-shadowBox">
+                                                                <h4 class="mb-4">Paper sketches</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/web-app/01_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/web-app/02_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/web-app/03_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/web-app/04_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/web-app/05_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/sketches/web-app/06_sketch.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-8">
+                                                            <div class="text-left bg-gray p-4 snj-shadowBox">
+                                                                <h4 class="mb-4">Wireframe</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/web-app/01_feedback_empty.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/web-app/02_feedback_new.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/web-app/03_feedback_overall_feedback.png" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/web-app/04_feedback_only.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/web-app/05_feedback_cancel.png" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/wireframe/web-app/06_feedback_success.png" class="img-fluid mb-8">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-8">
+                                                            <div class="text-left bg-gray p-4 snj-shadowBox">
+                                                                <h4 class="mb-4">Visual Design</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/web-app/01_feedback_empty.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/web-app/02_feedback_new.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/web-app/03_feedback_overall_feedback.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/web-app/04_feedback_only.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/web-app/05_feedback_cancel.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <img src="../../../images/projects/outlook/ui/web-app/06_feedback_success.jpg" class="img-fluid mb-8">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-uppercase text-white">Sanjay Shrestha&nbsp;|&nbsp;&copy;&nbsp;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </h2>
+                    <h3 class="text-gray text-base">Certified Usability Analyst(CUA)&trade;, Product/CX Designer</h3>
+                    <p>Kathmandu, Nepal</p>
+
+                    <p class="my-16">If you are thinking about hiring me or would like to discuss a project, <a href="mailto:dziner.sanjay@gmail.com">drop me a line.</a></p>
+                    <ul class="list-inline socialize">
+                        <li><a href="https://www.facebook.com/shresthasans" title="Facebook" target="_blank"><span class="snj-icon facebook"></span></a></li>
+                        <li><a href="https://twitter.com/shresthasans" title="Twitter" target="_blank"><span class="snj-icon twitter"></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/shresthasans" title="Linked In" target="_blank"><span class="snj-icon linkedin"></span></a></li>
+                        <li><a href="https://www.github.com/shresthasans" title="Github" target="_blank"><span class="snj-icon github"></span></a></li>
+                        <li><a href="https://dribbble.com/shresthasans" title="Dribbble" target="_blank"><span class="snj-icon dribbble"></span></a></li>
+                        <li><a href="https://www.behance.net/shresthasans" title="Behance" target="_blank"><span class="snj-icon behance"></span></a></li>
+                        <li><a href="https://shresthasans.github.io/resume/dist/" title="Resume" target="_blank"><span class="snj-icon resume"></span></a></li>
+                        <li><a href="mailto:dziner.sanjay@gmail.com" title="Send me an Email" target="_blank"><span class="snj-icon mail"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../../../scripts/main.min.js"></script>
+</body>
+
+</html>

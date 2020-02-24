@@ -1,0 +1,44 @@
+html {
+    font-size: 16px;
+}
+
+.#{$global} {
+    &-section {
+        padding: 7rem 0;
+    }
+}
+
+.intro {
+    height: 50vh;
+    // min-height: 700px;
+}
+
+.grid-item {
+    margin-bottom: 15px;
+    @media screen and (min-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    figure {
+        margin: 0;
+    }
+    figcaption {
+        position: absolute;
+        opacity: 0;
+        bottom: -50px;
+        background: #000;
+        color: #fff;
+        padding: 1rem;
+        transition: all ease-in-out .2s;
+    }
+    &:hover {
+        figcaption {
+            opacity: 1;
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+// Navigation
+//
+// Global Markup for Navigation
+//
+// markup:
+//	<div class="navbar-header">
+//		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+//			<span class="sr-only">Toggle navigation</span>
+//			<span class="icon-bar"></span>
+//			<span class="icon-bar"></span>
+//			<span class="icon-bar"></span>
+//		</button>
+//		<a class="navbar-brand" href="#">Project name</a>
+//	</div>
+//	<div id="navbar" class="collapse navbar-collapse">
+//		<ul class="nav navbar-nav navbar-right">
+//			<li class="active"><a href="#about">Home</a></li>
+//			<li><a href="#about">About</a></li>
+//			<li><a href="#contact">Contact</a></li>
+//		</ul>
+//	</div>
+//
+// Styleguide 3.3
+//
+.#{$global} {
+    &-logo {
+        font-size: 2rem;
+        left: 20px;
+        top: 20px;
+        opacity: 0;
+    }
+}
+
+.header-fixed {
+    background: $secondary-clr;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    transition: all ease-in-out .2s;
+    box-shadow: 0 0 6px #ccc;
+    .#{$global} {
+        &-logo {
+            opacity: 1;
+        }
+    }
+}
+
+$button-height: 18px;
+$button-width: 30px;
+.button_container {
+    position: fixed;
+    top: 35px;
+    right: 20px;
+    height: $button-height;
+    width: $button-width;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity .25s ease;
+    &:hover {
+        opacity: .7;
+    }
+    &.active {
+        .top {
+            transform: translateY(6px) translateX(0) rotate(45deg);
+            background: $secondary-clr;
+        }
+        .middle {
+            opacity: 0;
+            background: $secondary-clr;
+        }
+        .bottom {
+            transform: translateY(-10px) translateX(0) rotate(-45deg);
+            background: $secondary-clr;
+        }
+    }
+    span {
+        background: $primary-clr;
+        border: none;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .35s ease;
+        cursor: pointer;
+        &:nth-of-type(2) {
+            top: 8px
+        }
+        &:nth-of-type(3) {
+            top: 16px;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    background: $primary-clr;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    &.open {
+        opacity: .9;
+        visibility: visible;
+        height: 100%;
+        z-index: 999;
+        li {
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .35s;
+            &:nth-of-type(2) {
+                animation-delay: .4s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: .45s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: .50s;
+            }
+        }
+    }
+    nav {
+        position: relative;
+        height: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        li {
+            display: block;
+            height: 25%;
+            height: calc(100% / 4);
+            min-height: 50px;
+            position: relative;
+            opacity: 0;
+            a {
+                display: block;
+                position: relative;
+                color: $secondary-clr;
+                text-decoration: none;
+                overflow: hidden;
+                &:hover:after,
+                &:focus:after,
+                &:active:after {
+                    width: 100%;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0%;
+                    transform: translateX(-50%);
+                    height: 3px;
+                    background: $secondary-clr;
+                    transition: .35s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}

@@ -1,0 +1,24 @@
+.#{$global} {
+    &-testimonials {
+        img {
+            width: 150px;
+            margin: 0 auto;
+            padding: .5em;
+            border: 1px solid #e6e6e6;
+            border-radius: 150px;
+        }
+        blockquote {
+            border: none;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            padding: 0;
+            color: #000;
+        }
+        &__txt {
+            font-size: 28px;
+            color: #0e27fb;
+            font-weight: 500;
+        }
+    }
+}

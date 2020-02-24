@@ -1,0 +1,77 @@
+.#{$global} {
+    &-recentWork {
+        &__block {
+            background: #eee;
+            width: 100%;
+            min-height: 600px;
+            display: block;
+            position: relative;
+            margin-bottom: 30px;
+            background-position: center center;
+            background-size: cover;
+            .#{$global} {
+                &-recentWork {
+                    &__block {
+                        box-shadow: 0 0 15px #ccc;
+                        &-cnt {
+                            background: rgba(255, 255, 255, 0.9);
+                            width: 100%;
+                            height: 100%;
+                            transition: all ease-in-out .2s;
+                            display: table;
+                            border-width: 15px;
+                            border-style: solid;
+                            border-color: #ddd;
+                            @media screen and (min-width: 767px) {
+                                opacity: 0;
+                                border-color: #000;
+                                // box-shadow: 0 0 10px #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .#{$global} {
+                    &-recentWork {
+                        &__block {
+                            &-cnt {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            &-desc {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+            &--one {
+                background-image: url('../images/projects/avira/avira-front.jpg');
+            }
+            &--two {
+                background-image: url('../images/projects/outlook/outlook-front.jpg');
+            }
+        }
+        &__tag {
+            font-size: $base-size;
+            color: #ccc;
+            span {
+                color: rgba(0, 0, 0, .5);
+                &:after {
+                    content: ',';
+                }
+                &:last-child {
+                    &:after {
+                        content: '';
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: 2.5rem;
+            color: $primary-clr;
+        }
+    }
+}

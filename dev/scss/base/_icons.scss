@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'snjIcon';
+    src: url('../fonts/snjIcon.eot?saostf');
+    src: url('../fonts/snjIcon.eot?saostf#iefix') format('embedded-opentype'), url('../fonts/snjIcon.ttf?saostf') format('truetype'), url('../fonts/snjIcon.woff?saostf') format('woff'), url('../fonts/snjIcon.svg?saostf#snjIcon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.snj-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'snjIcon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logo:before {
+    content: "\e905";
+}
+
+.qualityAssurance:before {
+    content: "\e902";
+}
+
+.strategy:before {
+    content: "\e908";
+}
+
+.mail:before {
+    content: "\e901";
+}
+
+.design:before {
+    content: "\e90a";
+}
+
+.resume:before {
+    content: "\e903";
+}
+
+.github:before {
+    content: "\e904";
+}
+
+.behance:before {
+    content: "\e906";
+}
+
+.dribbble:before {
+    content: "\e907";
+}
+
+.linkedin:before {
+    content: "\e900";
+}
+
+.twitter:before {
+    content: "\f099";
+}
+
+.facebook:before {
+    content: "\f09a";
+}
+
+.develop:before {
+    content: "\f120";
+}

@@ -1,0 +1,56 @@
+@-webkit-keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+@-webkit-keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: 'snjIcon';
+  src: url("../fonts/snjIcon.eot?saostf");
+  src: url("../fonts/snjIcon.eot?saostf#iefix") format("embedded-opentype"), url("../fonts/snjIcon.ttf?saostf") format("truetype"), url("../fonts/snjIcon.woff?saostf") format("woff"), url("../fonts/snjIcon.svg?saostf#snjIcon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
